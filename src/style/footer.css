@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family:barlow ;
+    src: url('./../font/Barlow-Regular.ttf');
+}
+.top_side {
+    width: 100%;
+    padding: 30px;
+    min-height: max-content;
+    justify-content: center;  
+    gap: 80px;
+    display: flex;
+    
+}
+.top_side .cont_near {
+    display: flex;
+    margin-right: 80px;
+}
+.top_side .instagram_container {
+    margin-left: 50px;
+}
+.links_container {
+    font-family: barlow;
+    color:#ffff;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+.links_container h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.footer_menu_container{
+    width: 300px;
+    min-height: max-content;
+    padding: 20px;
+  
+}
+.footer_menu_container li {
+    color: #ffff;
+    list-style-type: none;
+    cursor: pointer;
+    margin: 12px;
+    opacity: 0.8;
+}
+.footer_menu_container li:hover {
+    opacity: 1;
+}
+.instagram_container{
+    width: 300px;
+    min-height: max-content;
+    padding: 5px;
+
+}
+.same_h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color:#ffff;
+    margin-bottom:20px;
+}
+
+.flex {
+    display: flex;
+    padding:12px 3px;
+}
+.flex p{
+    cursor: default;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+.flex p:hover{
+    opacity: 1;
+}
+.flex span{
+    cursor:default;
+    opacity: 0.8;
+    margin-left: 8px;
+}
+.flex span:hover {
+    opacity: 1;
+}
+.ins_image img {
+    margin:4px;
+}
+.bottom_side {
+    width: 53%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tw-icon{
+    cursor:pointer;
+    color:#ffff;
+    transition: all 0.5s ease;
+    
+}
+.tw-icon:hover{
+    color:#1DA1F2;
+}

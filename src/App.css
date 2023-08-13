@@ -1,38 +1,76 @@
-.App {
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.home_main_section {
+  padding-top: 60px;
+  width: 100%;
+  padding-bottom: 60px;
+  min-height: max-content;
+  background-color: #faf7f2;
+}
+
+@font-face {
+  font-family: el_yazi;
+  src: url(./font/Satisfy-Regular.ttf);
+}
+@font-face {
+  font-family: barlow ;
+  src: url(./font/Barlow-Regular.ttf);
+}
+
+.slogan{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 80%;
+}
+.slogan h2{
   text-align: center;
+  font-family: el_yazi;
+  color:#ce2829;
+  font-weight: 400;
+  font-size:2.2rem;
+}
+.slogan p {
+  padding-top: 10px;
+  font-family: barlow;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_links{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:35px;
+  width: 100%;
+  padding: 5px;
+  margin:40px 0;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_container {
+  margin-top: 25px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  width: 100%;
+  min-height: max-content;
 }
