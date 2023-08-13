@@ -1,0 +1,50 @@
+@font-face {
+    font-family: barlow ;
+    src: url('./../font/Barlow-Regular.ttf');
+}
+
+.card {
+    padding: 5px 40px;
+    margin: 2px 10px;
+    background-color: #ffff;
+    border:1px solid transparent;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.card:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.image{
+    padding-bottom: 15px;
+
+}
+.info_card{
+    font-family: barlow;
+}
+.info_card p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.info_card .li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+.li .list {
+    color: #292929;
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 14px;
+}
+.last-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+.li span:after {
+    font-size: 18px;
+    content: "\20BA";
+}
