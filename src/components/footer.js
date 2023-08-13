@@ -26,8 +26,8 @@ const Footer = () => {
                 height={20}
               />
               <span className="parag">
-                <p>341 Londonderry Road,</p>
-                <p>Istanbul Türkiye</p>
+                <p style={{color:'#fff'}}>341 Londonderry Road,</p>
+                <p style={{color:'#fff'}}>Istanbul Türkiye</p>
               </span>
             </div>
             <div className="flex">

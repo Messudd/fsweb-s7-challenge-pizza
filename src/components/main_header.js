@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
 import iconData from './../icon_data';
 import './../style/main_header.css';
 
@@ -18,9 +17,9 @@ function MainHeader() {
         <nav>
           <div className="navbar">
             {
-            iconData.map((item) => {
+            iconData.map((item,index) => {
               return(
-                  <Link className = 'svg' ><img src={item.icon} alt="icoonn" width = '32' height = '32' /><li>{item.contentName}</li></Link>
+                  <div key={index} className = 'svg' ><img src={item.icon} alt="icoonn" width = '32' height = '32' /><li>{item.contentName}</li></div>
                )
              })
             }

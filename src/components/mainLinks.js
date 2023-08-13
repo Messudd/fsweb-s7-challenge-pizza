@@ -11,7 +11,7 @@ const MainLinks = (props) => {
         return (
           <button onClick = {() => {UpdateCards(index)}} className="svgs" key ={index} >
             <img src={content.icon} alt="icoonn" width="32" height="32" />
-            <li>{content.description}</li>
+            <span>{content.description}</span>
           </button>
         );
       })}
