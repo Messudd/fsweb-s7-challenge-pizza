@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    gap:50px;
+    gap:35px;
     width: 100%;
     min-height: max-content;
     margin:3px;
@@ -55,8 +55,8 @@
     font-family: el_yazi;
 }
 .hrr {
-    margin-top: 20px;
-    margin-bottom:40px;
+    margin-top: 5px;
+    margin-bottom:25px;
     height:  2px;
     width: 60%;
     color:whitesmoke;
@@ -74,10 +74,9 @@
     font-family: barlow;
     font-size: 1.8rem;
     font-weight: 500;
-
 }
 .main-div{
-    margin-top: 60px;
+    margin-top: 35px;
     font-family: barlow;
 }
 .main-div p {
@@ -98,7 +97,7 @@
     padding: 30px;
     border:1.5px solid rgba(255,255,255, .5);
     border-radius: 4px;
-    margin: 50px 5px;
+    margin: 40px 5px;
 } 
 .onay_bottom h3 {
     color:#ffff;

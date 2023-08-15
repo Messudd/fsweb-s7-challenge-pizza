@@ -7,7 +7,7 @@
 
 body{
   width: 100vw;
-  height: 100vh;
+  min-height: max-content;
   background-color: #ffffff;
 }
 
