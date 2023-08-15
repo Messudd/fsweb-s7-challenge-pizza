@@ -7,13 +7,16 @@ import card_data from './card_data';
 import Footer from './components/footer';
 import CardContainer from "./components/cardContainer";
 import Order from "./components/order";
+import OnayPage from "./components/onayPage";
 import './App.css';
+
 
 
 const App = () => {
   const [cards, setCards] = useState(null);
   const [cardData , setCardData] = useState([]);
-
+  const [postRes , setPostResData] = useState({});
+  const [arrayy , setArray] = useState([]);
   
   const UpdateCards = (num) => {
     setCards(card_data[num]);
@@ -47,11 +50,13 @@ useEffect(() => {
             </main>
             <Footer></Footer>
       </Route>
-      <Route path = '/order/onay' >
-        <h1>Siparişiniz Alındı ....</h1>
+
+      <Route path = '/order/onay'>
+          <OnayPage postRes = {postRes} arrayy = {arrayy} ></OnayPage>
       </Route>
+  
       <Route path = '/order' >
-        <Order data = {cardData}></Order>
+        <Order propsdata = {cardData} setPostResData = {setPostResData} setArray={setArray}></Order>
         <Footer></Footer>
       </Route>
      </Switch>

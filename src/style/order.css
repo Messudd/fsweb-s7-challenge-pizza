@@ -136,6 +136,10 @@
     margin-top: 20px;
     padding: 8px 40px;
 }
+.select:focus{
+    outline: none;
+    box-shadow: 0 0 5px #fdc913 ;
+}
 .radio-div{
     padding-top:10px;
     display: flex;
@@ -163,8 +167,6 @@
     width: 35px;
     height: 35px;
 }
-
-
 .check {
     width: 35px;
     height: 20px;
@@ -201,7 +203,7 @@
     gap:20px;
 }
 .not{
-    margin-top :20px;
+    margin-top :5px;
     font-size: 1.2rem;
     color: #1a1a1a;
     opacity: 0.9; 
@@ -217,7 +219,6 @@
 }
 .not-input:focus{
     outline: none;
-    border:1px solid #fdc913;
     box-shadow: 0 0 5px #fdc913 ;
 }
 .total-div{
@@ -255,7 +256,13 @@
     opacity: 0.8;
 }
 .secim{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 15px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
 }
 .secim-span{
     color:#1a1a1a;
