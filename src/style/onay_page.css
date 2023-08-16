@@ -1,3 +1,9 @@
+@font-face {
+    font-family: londrina ;
+    src: url('./../font/LondrinaSolid-Regular.ttf');
+    font-family: ebg ;
+    src: url('./../font/EBGaramond-Regular.ttf');
+}
 .bigBody {
     width: 100vw;
     height:100vh;
@@ -32,19 +38,19 @@
 }
 .onay_top h1 {
     color: #ffff;
-    font-family: quatt;
-    font-size: 3rem;
-    font-weight: bold;
+    font-family: londrina;
+    font-weight: 900;
+    font-size: 2.5rem;
 }
 .onay-head {
     padding:15px;
 }
 .onay-head .ok{
-    padding-top:7px;
+    padding-top: 15px;
     color:#ffff;
-    font-size: 5rem;
-    font-weight: 400;
-    font-family: barlow;
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: ebg;
 }
 .other-p{
     text-align: center;
@@ -58,7 +64,7 @@
     margin-top: 5px;
     margin-bottom:25px;
     height:  2px;
-    width: 60%;
+    width: 55%;
     color:whitesmoke;
     opacity: 0.8;
 }
@@ -72,7 +78,7 @@
 .onay_main h2 {
     color:#ffff;
     font-family: barlow;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 .main-div{

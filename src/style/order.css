@@ -286,3 +286,10 @@
     width: 100%;
     padding: 10px;
 }
+.form-calculate button:hover:enabled{
+    background-color: #fcd446;
+}
+.form-calculate button:disabled{
+    background-color:#fdc913;
+    filter:brightness(90%);
+}

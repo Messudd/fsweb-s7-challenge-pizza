@@ -63,6 +63,7 @@ const Order = (props) => {
   const siparisBtnState = () => {
     setSiparisBtn(true);
     setSecenekBtn(false);
+    window.scrollTo({top:50, left: 0, behavior: 'smooth'});
   };
 
   const handleUpdateForm = () => {
@@ -192,7 +193,7 @@ const Order = (props) => {
               height={260}
             />
           </div>
-          <div id="line_link" className="linkler">
+          <div className="linkler">
             <span
               className="order_link"
               style={{ color: mainPageBtn && "#d23b3b" }}
@@ -209,15 +210,14 @@ const Order = (props) => {
               Seçenekler
             </span>{" "}
             -{" "}
-            <a style={{ textDecoration: "none" }} href="#line_link">
-              <span
-                style={{ color: siparisBtn && "#d23b3b" }}
-                className="order_link"
-                onClick={siparisBtnState}
+            <span
+              data-cy = 'order-cy'
+              style={{ color: siparisBtn && "#d23b3b" }}
+              className="order_link"
+              onClick={siparisBtnState}
               >
                 Sipariş Oluştur
-              </span>
-            </a>
+            </span>
           </div>
           <div className="pizza_content">
             <p className="order-name">{name}</p>
@@ -312,6 +312,7 @@ const Order = (props) => {
               <input
                 className="not-input"
                 placeholder="Adınız ..."
+                data-cy = 'name-area'
                 style={{ marginTop: "10px" }}
                 onChange={(e) => {
                   setPerName(e.target.value);
@@ -326,6 +327,7 @@ const Order = (props) => {
               <input
                 className="not-input"
                 name="order_Note"
+                data-cy = 'note-area'
                 type="text"
                 placeholder="Siparişine eklemek istediğin bir not var mı?"
                 onChange={(e) => {
@@ -343,6 +345,7 @@ const Order = (props) => {
                   </span>
                   <span>{orderCount}</span>
                   <span
+                    data-cy = 'up-counter'
                     style={{ cursor: "default" }}
                     onClick={orderCountArttir}
                   >
@@ -367,6 +370,7 @@ const Order = (props) => {
                   </div>
                   <Link to="/order/onay">
                     <button
+                      data-cy = 'order-begin'
                       disabled={submitStatus() ? false : true}
                       type="submit"
                       onClick={handleSubmitForm}

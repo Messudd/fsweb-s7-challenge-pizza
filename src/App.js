@@ -11,7 +11,6 @@ import OnayPage from "./components/onayPage";
 import './App.css';
 
 
-
 const App = () => {
   const [cards, setCards] = useState(null);
   const [cardData , setCardData] = useState([]);
@@ -24,6 +23,7 @@ const App = () => {
   
 const getData = (veri) => {
   setCardData(veri);
+  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 }
 
 
