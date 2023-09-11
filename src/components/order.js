@@ -287,7 +287,7 @@ const Order = (props) => {
               <div className="checkbox-section">
                 {checkValues.map((item, index) => {
                   return (
-                    <>
+                    <div className="checkbox-items">
                       <input
                         key={index}
                         className="check"
@@ -303,7 +303,7 @@ const Order = (props) => {
                       <label key={Date.now()} htmlFor={index}>
                         {item}
                       </label>
-                    </>
+                    </div>
                   );
                 })}
               </div>
